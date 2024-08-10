@@ -125,6 +125,34 @@
   opacity: 0.6;
 }
 
+.image-contrast {
+  filter: contrast(60%);
+}
+
+.image-invertedSepia {
+  filter: sepia(0.8) invert(0.5%);
+}
+
+.image-blur {
+  filter: blur(1px);
+}
+
+.image-nuar {
+  filter: grayscale(50%);
+}
+
+.image-saturate {
+  filter: saturate(300%);
+}
+
+.image-old-photo {
+  filter: hue-rotate(0.1turn) contrast(50%);
+}
+
+.image-sepia {
+  filter: sepia(0.3);
+}
+
 .section {
   font-family: var(--main-font, 'Inter-Variable', sans-serif);
   font-size: 18px;
@@ -157,6 +185,7 @@
   display: block;
   width: 100%;
   height: 100%;
+  max-height: 696px;
   object-fit: cover;
   object-position: center;
 }
