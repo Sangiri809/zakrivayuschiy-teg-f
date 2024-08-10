@@ -1,1 +1,1 @@
-git@github.com:Sangiri809/zakrivayuschiy-teg-f.git
+https://github.com/Sangiri809/zakrivayuschiy-teg-f.git
