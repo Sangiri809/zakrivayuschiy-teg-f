@@ -53,12 +53,12 @@
 
 .main-body {
   fill: transparent;
-  transition: 0.3s;
+  transition: 0.3s linear;
 }
 
 .core {
   fill: transparent;
-  transition: 0.03s;
+  transition: 0.3s;
 }
 
 .sparks {
@@ -101,11 +101,11 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: heart-blink 0.3s ease-in 0.1s 1;
+  animation: heart-blink 0.3s ease-in 0.1s 1 alternate;
   transform-origin: center;
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks 0.3s ease-in 0.3s 1;
+  animation: sparks 0.3s ease-in 0.3s 1 alternate;
   transform-origin: center;
 }
