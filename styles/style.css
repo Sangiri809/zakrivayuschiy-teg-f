@@ -55,6 +55,7 @@
 .header__logo-link {
   font-size: clamp(3.0625rem, 2.5723rem + 2.0915vw, 4.0625rem);
   outline: 0;
+  text-decoration: none;
 }
 
 .header__title {
@@ -258,6 +259,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 90%;
+  margin: auto;
+  padding: auto;
   text-align: center;
 }
 
@@ -275,11 +278,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   margin: 0;
   padding: 0;
-  top: 2px;
-  left: 5px;
   max-height: 37px;
   background-color: var(--bg-color, rgba(255, 255, 255, 1));
   cursor: pointer;
@@ -392,7 +392,6 @@
 .button__universal:hover::before {
   transform: scaleX(1);
   color: var(--button-text-color, rgba(255, 255, 255, 1));
-  transition: 0.5s ease-in-out;
   transform-origin: left;
 }
 
@@ -405,11 +404,25 @@
     right: 11px;
   }
 
-  .footer__button {
+  .save__button {
     flex-direction: column;
   }
 
-  .footer__svg {
+  .save__svg {
     width: 28px;
+  }
+
+  .dialog[open] {
+    width: 341px;
+  }
+
+  .dialog__content-wrapper {
+    width: 257px;
+    height: 63px;
+    white-space: normal;
+  }
+
+  .dialog__form {
+    width: 257px;
   }
 }
