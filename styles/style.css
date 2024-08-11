@@ -248,8 +248,6 @@
 }
 
 .card__like-button:focus {
-  outline: none;
-  box-shadow: 2px 2px 0 var(--accent-color, rgba(0, 0, 0, 1));
   transition: 0.3s ease;
 }
 
@@ -308,11 +306,6 @@
   align-items: center;
   gap: 8px;
   padding: 15px 19px;
-}
-
-.save__button:focus {
-  outline: none;
-  box-shadow: 2px 2px 0 var(--accent-color, rgba(0, 0, 0, 1));
 }
 
 .dialog[open] {
@@ -393,6 +386,11 @@
   transform: scaleX(1);
   color: var(--button-text-color, rgba(255, 255, 255, 1));
   transform-origin: left;
+}
+
+.button__universal:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 var(--accent-color, rgba(0, 0, 0, 1));
 }
 
 @media(width <= 380px) {
